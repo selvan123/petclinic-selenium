@@ -20,7 +20,7 @@ public class PetClinic {
 		//driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-		driver.get("http://54.214.95.28:8081/petclinic/");
+		driver.get("http://54.214.95.28:8081/Petclinic/");
 		//String url=driver.findElement(By.xpath("//body")).getText();
 		//driver.get(url);
 		
