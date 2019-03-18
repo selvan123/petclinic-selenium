@@ -89,7 +89,7 @@ public class PetClinic {
 	
 	public List<String> readExcel() {
 		List<String> data = new ArrayList<String>();
-		File file=new File("workspace\\Petclinic.xlsx");
+		File file=new File("workspace/Petclinic.xlsx");
 		try {
 			FileInputStream inputStream = new FileInputStream(file);
 			Workbook tdmWorkBook=new XSSFWorkbook(inputStream);
