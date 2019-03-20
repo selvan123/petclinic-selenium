@@ -93,7 +93,7 @@ public class PetClinic {
 		try {
 			FileInputStream inputStream = new FileInputStream(file);
 			Workbook tdmWorkBook=new XSSFWorkbook(inputStream);
-			org.apache.poi.ss.usermodel.Sheet tdmSheet=tdmWorkBook.getSheet("PetClinic");
+			org.apache.poi.ss.usermodel.Sheet tdmSheet=tdmWorkBook.getSheet("PEOPLE_2");
 			int rowCount=tdmSheet.getLastRowNum()-tdmSheet.getFirstRowNum();
 			for (int i = 1; i < rowCount+1; i++) {
 
