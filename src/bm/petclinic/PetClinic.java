@@ -30,7 +30,7 @@ public class PetClinic {
 		driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-		driver.get("http://54.214.95.28:8081/petclinic/");
+		driver.get("http://petclinic.42w36m7wvr.us-west-2.elasticbeanstalk.com/");
 		//String url=driver.findElement(By.xpath("//body")).getText();
 		//driver.get(url);
 		
