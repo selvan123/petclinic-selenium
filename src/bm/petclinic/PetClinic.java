@@ -59,7 +59,8 @@ public class PetClinic {
 	PetClinic p1 =new PetClinic();
 	List<String> data=p1.readExcel();
 	driver.findElement(By.linkText("FIND OWNERS")).click();
-		 for(int i=0;i<=data.size()-5;i++) {
+		 int i=0;
+		 for(;i<=data.size()-5;i++) {
 		 driver.findElement(By.linkText("Add Owner")).click();
 		
 		 driver.findElement(By.xpath("//form[@class='form-horizontal']//input[@name='firstName']")).sendKeys(data.get(i));
@@ -67,7 +68,7 @@ public class PetClinic {
 		 driver.findElement(By.xpath("//form[@class='form-horizontal']//input[@name='address']")).sendKeys(data.get(i+2));
 		 driver.findElement(By.xpath("//form[@class='form-horizontal']//input[@name='city']")).sendKeys(data.get(i+3));
 		 driver.findElement(By.xpath("//form[@class='form-horizontal']//input[@name='telephone']")).sendKeys(data.get(i+4));
-		 
+		 i=i+4;
 		 driver.findElement(By.xpath("//form[@class='form-horizontal']//button[@class='btn btn-default']")).click();
 		 
 		 
