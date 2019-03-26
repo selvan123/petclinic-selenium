@@ -59,7 +59,7 @@ public class PetClinic {
 	PetClinic p1 =new PetClinic();
 	List<String> data=p1.readExcel();
 	driver.findElement(By.linkText("FIND OWNERS")).click();
-		 for(int i=0;i<=data.size();i++) {
+		 for(int i=0;i<=data.size()-5;i++) {
 		 driver.findElement(By.linkText("Add Owner")).click();
 		
 		 driver.findElement(By.xpath("//form[@class='form-horizontal']//input[@name='firstName']")).sendKeys(data.get(i));
